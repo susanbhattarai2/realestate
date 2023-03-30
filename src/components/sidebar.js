@@ -1,4 +1,13 @@
-<aside className="mb-[-40px] asidebar">
+import React from 'react'
+import video from "../assets/icon/video.png"
+import camera from "../assets/icon/camera.png"
+import propertyimage from "../assets/properties/properties1.jpg"
+import { Link } from 'react-router-dom'
+const Sidebar = () => {
+  return (
+    <>
+    
+    <aside className="mb-[-40px] asidebar">
     <div className="bg-[#F5F9F8] px-[20px] lg:px-[15px] xl:px-[35px] py-[50px] rounded-[8px] mb-[40px]">
         <h3 className="text-primary leading-none text-[24px] font-recoleta underline mb-[30px]">Property Search <span
                 className="text-secondary">.</span></h3>
@@ -7,7 +16,7 @@
             <div className="relative mb-[25px] bg-white">
                 <input
                     className="font-light w-full leading-[1.75] placeholder:opacity-100 placeholder:text-body border border-primary border-opacity-60 rounded-[8px] pl-[40px] pr-[20px] py-[10px] focus:border-[#FD6400] focus:border-opacity-60 focus:outline-none focus:drop-shadow-[0px_6px_15px_rgba(0,0,0,0.1)] bg-white"
-                    type="text" placeholder="Location">
+                    type="text" placeholder="Location"/>
                 <svg className="absolute top-1/2 -translate-y-1/2 z-[1] left-[20px] pointer-events-none" width="14"
                     height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.39648 6.41666H8.60482" stroke="#016450" stroke-width="1.5" stroke-linecap="round" />
@@ -125,17 +134,17 @@
             className="text-secondary">.</span></h3>
         <div className="sidebar-carousel relative">
             <div className="swiper">
-                <!-- Additional required wrapper -->
+                {/* <!-- Additional required wrapper --> */}
                 <div className="swiper-wrapper">
-                    <!-- Slides -->
+                    {/* <!-- Slides --> */}
                     <div className="swiper-slide">
 
                         <div
                             className="overflow-hidden rounded-md drop-shadow-[0px_2px_10px_rgba(0,0,0,0.1)] bg-[#FFFDFC] text-center mb-[20px]">
                             <div className="relative">
                                 <Link to="properties-details.html" className="block">
-                                    <img src={property6} className="w-full h-full"
-                                        loading="lazy" width="370" height="266" alt="property6"/>
+                                    <img src={propertyimage} className="w-full h-full"
+                                        loading="lazy" width="370" height="266" alt="propertyimage" />
                                 </Link>
                                 <div className="flex flex-wrap flex-col absolute top-5 right-5">
                                     <button
@@ -199,23 +208,23 @@
 
                             </div>
                         </div>
-                        <!-- drop-shadow-[0px_2px_10px_rgba(0,0,0,0.1)] -->
+                        {/* <!-- drop-shadow-[0px_2px_10px_rgba(0,0,0,0.1)] --> */}
                         <div
                             className="overflow-hidden rounded-md drop-shadow-[0px_2px_10px_rgba(0,0,0,0.1)] bg-[#FFFDFC] text-center">
                             <div className="relative">
                                 <Link to="properties-details.html" className="block">
-                                    <img src="assets/images/properties/properties5.jpg" className="w-full h-full"
-                                        loading="lazy" width="370" height="266" alt="@@title">
+                                    <img src={propertyimage} className="w-full h-full"
+                                        loading="lazy" width="370" height="266" alt="@@title"/>
                                 </Link>
                                 <div className="flex flex-wrap flex-col absolute top-5 right-5">
                                     <button
                                         className="flex flex-wrap items-center bg-primary p-[5px] rounded-[2px] text-white mb-[5px] text-xs"><img
-                                            className="mr-1" src="assets/images/icon/camera.png" loading="lazy" width="13"
-                                            height="10" alt="camera icon">07</button>
+                                            className="mr-1" src={camera} loading="lazy" width="13"
+                                            height="10" alt="camera icon"/>07</button>
                                     <button
                                         className="flex flex-wrap items-center bg-primary p-[5px] rounded-[2px] text-white text-xs"><img
-                                            className="mr-1" src="assets/images/icon/video.png" loading="lazy" width="14"
-                                            height="10" alt="camera icon">08</button>
+                                            className="mr-1" src={video} loading="lazy" width="14"
+                                            height="10" alt="camera icon"/>08</button>
                                 </div>
 
                             </div>
@@ -272,7 +281,7 @@
 
                 </div>
             </div>
-            <!-- If we need navigation buttons -->
+            {/* <!-- If we need navigation buttons --> */}
             <div className="flex flex-wrap items-center justify-center mt-[25px]">
                 <div
                     className="swiper-button-prev w-[26px] h-[26px] rounded-full bg-primary  text-white hover:bg-secondary static mx-[5px] mt-[0px]">
@@ -287,3 +296,9 @@
 
     </div>
     </aside>
+
+    </>
+  )
+}
+
+export default Sidebar

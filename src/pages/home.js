@@ -23,7 +23,7 @@ const Home = () => {
                                         Featured
                                         Properties<span className="text-secondary">.</span></h2>
                                 </div>
-                                <ul className="all-properties flex flex-wrap lg:pt-[10px]">
+                                {/* <ul className="all-properties flex flex-wrap lg:pt-[10px]">
                                     <li data-tab="all-properties"
                                         className="mr-[30px] md:mr-[45px] mb-4 lg:mb-0 leading-none active"><button
                                             className="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">All
@@ -40,7 +40,7 @@ const Home = () => {
                                     <li data-tab="co-living2" className="md:mr-[0px] mb-4 lg:mb-0 leading-none"><button
                                             className="leading-none capitalize text-primary hover:text-secondary transition-all text-[16px] ease-out">Co-living</button>
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
                             <div className="col-span-12">
                                 <div id="all-properties" className="properties-tab-content active">

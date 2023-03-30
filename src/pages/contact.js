@@ -2,9 +2,11 @@ import React from 'react'
 import Nav from '../components/nav'
 import Newsletter from '../components/newsletter'
 import Footer from '../components/footer'
+
 import map from "../assets/icon/map.png"
 import phone from "../assets/icon/phone.png"
 import mail from "../assets/icon/mail.png"
+
 const Contact = () => {
   return (
     <>
@@ -36,7 +38,7 @@ const Contact = () => {
 
         {/* <!-- Hero section end --> */}
 {/* 
-        <!-- contact form start --> */}
+        <!-- contact detail start --> */}
         <section className="py-[80px] lg:py-[120px]">
 
             <div className="container">
@@ -62,7 +64,7 @@ const Contact = () => {
 
                     <div className="flex flex-wrap hover: drop-shadow-[0px_16px_10px_rgba(0,0,0,0.1)] hover:bg-[#F5F9F8] transition-all p-[20px] xl:p-[35px] rounded-[8px] mb-[30px]">
                         <img className="self-center mr-[20px] sm:mr-[40px] lg:mr-[20px] xl:mr-[40px] sm:mb-[15px] lg:mb-0" src={map} width="40" height="55"
-                            loading="lazy" alt="image icon"/>
+                            loading="lazy" alt="imageicon"/>
                         <div className="flex-1">
                             <h4 className="font-recoleta leading-none text-[28px] text-primary mb-[10px]">Address <span
                                     className="text-secondary">.</span></h4>
@@ -74,7 +76,7 @@ const Contact = () => {
                     <div
                         className="flex flex-wrap hover: drop-shadow-[0px_16px_10px_rgba(0,0,0,0.1)] hover:bg-[#F5F9F8] transition-all p-[20px] xl:p-[35px] rounded-[8px] mb-[30px]">
                         <img className="self-center mr-[20px] sm:mr-[40px] lg:mr-[20px] xl:mr-[40px] sm:mb-[15px] lg:mb-0" src={phone} width="46" height="46"
-                            loading="lazy" alt="image icon"/>
+                            loading="lazy" alt="imageicon"/>
                         <div className="flex-1">
                             <h4 className="font-recoleta leading-none text-[28px] text-primary mb-[10px]">Call us <span
                                     className="text-secondary">.</span></h4>
@@ -85,7 +87,7 @@ const Contact = () => {
 
                     <div className="flex flex-wrap hover: drop-shadow-[0px_16px_10px_rgba(0,0,0,0.1)] hover:bg-[#F5F9F8] transition-all p-[20px] xl:p-[35px] rounded-[8px] mb-[30px] xl:pl-[65px]">
                         <img className="self-center mr-[20px] sm:mr-[40px] lg:mr-[20px] xl:mr-[40px] sm:mb-[15px] lg:mb-0" src={mail} width="46" height="52"
-                            loading="lazy" alt="image icon"/>
+                            loading="lazy" alt="imageicon" />
                         <div className="flex-1">
                             <h4 className="font-recoleta leading-none text-[28px] text-primary mb-[10px]">Email us <span
                                     className="text-secondary">.</span></h4>
