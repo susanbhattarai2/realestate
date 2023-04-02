@@ -1,4 +1,45 @@
+import React from 'react'
+import Nav from '../components/nav'
+import Formadd from '../components/formadd'
+import Newsletter from '../components/newsletter'
+import Footer from '../components/footer'
+const Addproperties = () => {
+  return (
+    <>
+    <Nav />
 
+<section
+            className="bg-no-repeat bg-center bg-cover bg-[#FFF6F0] h-[350px] lg:h-[513px] xl:h-[650px] flex flex-wrap items-center relative before:absolute before:inset-0 before:content-[''] before:bg-[#000000] before:opacity-[70%]"
+            //</>style="background-image: url('assets/images/breadcrumb/bg-1.png');"
+            >
+            <div className="container">
+                <div className="grid grid-cols-12">
+                    <div className="col-span-12">
+                        <div className="max-w-[700px]  mx-auto text-center text-white relative z-[1]">
+                            <div className="mb-5"><span className="text-base block">Property ADD</span></div>
+                            <h1
+                                className="font-recoleta text-[32px] sm:text-[50px] md:text-[68px] lg:text-[50px] leading-tight xl:text-2xl">
+                                Add Property
+                            </h1>
+
+                            <p className="text-base mt-5 max-w-[500px] mx-auto text-center">
+                                Huge number of propreties availabe here for buy and sell
+                                also you can find here co-living property as you like
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pt-[80px] lg:pt-[120px] add-properties-form-select">
+            <div class="container">
+                <Formadd />
+            </div>
+        </div>
+
+
+        
         <section>
             <div className="container">
                 <div className="grid grid-cols-12 gap-x-[30px] mb-[-45px]">
@@ -89,11 +130,38 @@
                         </h3>
 
                         <div className="h-[350px] rounded-[6px] overflow-hidden">
-                            <iframe className="w-full h-full"
+                            {/* <iframe className="w-full h-full"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4814229.011985735!2d-65.89121968758322!3d-7.7486900084225026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e8605342744385%3A0x3d3c6dc1394a7fc7!2sAmazon%20Rainforest!5e0!3m2!1sen!2sbd!4v1644813708270!5m2!1sen!2sbd"
-                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe> */}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+    {/* footer section------------------------- */}
+ {/* newsletter */}
+ <section className="pt-[80px] lg:pt-[120px]">
+                    <div className="container">
+                    <div className="grid grid-cols-1">
+                    <div className="col-span">
+                       <Newsletter />
+                    </div>
+                    </div>
+                    </div>
+                  </section>
+
+                  {/* footer */}
+                  <footer className="footer bg-[#ECFAF7] pt-[80px] lg:pt-[200px] pb-[80px] lg:pb-[110px] font-light bg-no-repeat"
+            >
+            <div className="container">
+            <Footer />
+            </div>
+        </footer>
+
+
+    </>
+  )
+}
+
+export default Addproperties

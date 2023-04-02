@@ -8,6 +8,7 @@ import Register from './pages/register'
 import Properties from './pages/properties'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Propertiesdetails from './pages/propertiesdetails';
+import Addproperties from './pages/addproperties';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/propertiesdetails' element={<Propertiesdetails/>}/>
+          <Route path='/addproperties' element={<Addproperties />} />
         </Routes>
 
 

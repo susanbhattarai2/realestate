@@ -1,6 +1,8 @@
 import React from 'react'
 import Nav from '../components/nav'
 import Form from '../components/form'
+import Newsletter from '../components/newsletter';
+import Footer from '../components/footer';
 import Sidebar from '../components/sidebar';
 import { Link } from 'react-router-dom';
 import poster from '../assets/properties-details/post1.png'
@@ -298,7 +300,25 @@ const Propertiesdetails
 
         </section>
 
+{/* footer section------------------------- */}
+ {/* newsletter */}
+ <section className="pt-[80px] lg:pt-[120px]">
+                    <div className="container">
+                    <div className="grid grid-cols-1">
+                    <div className="col-span">
+                       <Newsletter />
+                    </div>
+                    </div>
+                    </div>
+                  </section>
 
+                  {/* footer */}
+                  <footer className="footer bg-[#ECFAF7] pt-[80px] lg:pt-[200px] pb-[80px] lg:pb-[110px] font-light bg-no-repeat"
+            >
+            <div className="container">
+            <Footer />
+            </div>
+        </footer>
       </>
     )
   }
